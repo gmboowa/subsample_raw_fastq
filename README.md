@@ -1,4 +1,4 @@
-C script for logical subsampling of FASTQ reads
+### C script for logical subsampling of FASTQ reads
 
 ## Features
 
