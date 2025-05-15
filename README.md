@@ -2,17 +2,17 @@ C script for logical subsampling of FASTQ reads
 
 ## Features
 
-Maintains Read Pairs: Always keeps or discards both R1 and R2 reads together to maintain pairing.
+**Maintains Read Pairs**: Always keeps or discards both R1 & R2 reads together to maintain pairing.
 
-Configurable Subsampling: You can specify any subsampling fraction from 1% to 100%.
+**Configurable Subsampling**: You can specify any subsampling fraction from 1% to 100%.
 
-Random Seed Control: Allows setting a specific random seed for reproducible results.
+**Random Seed Control**: Allows setting a specific random seed for reproducible results.
 
-Efficient Processing: Reads and writes FASTQ records in blocks of 4 lines.
+**Efficient Processing**: Reads and writes FASTQ records in blocks of 4 lines.
 
-Error Handling: Checks for file opening errors and unpaired reads at the end of files.
+**Error Handling**: Checks for file opening errors & unpaired reads at the end of files.
 
-Verbose Output: Optionally reports statistics about the subsampling process.
+**Verbose Output**: Optionally reports statistics about the subsampling process.
 
 
 
