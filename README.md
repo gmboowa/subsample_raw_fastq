@@ -17,35 +17,51 @@ Verbose Output: Optionally reports statistics about the subsampling process.
 
 
 
-C Script for Subsampling Paired-End FASTQ Reads
+### 1. C Script for Subsampling Paired-End FASTQ Reads
 
 Compilation:
 
 You'll need to link with zlib:
 
-'''bash
+```bash
 
 gcc -o subsample_paired_fastq subsample_paired_fastq.c -lz
 
-....
+
+```
 
 Usage:
 
-'''bash
+```bash
 
 ./subsample_paired_fastq -a input_R1.fastq.gz -b input_R2.fastq.gz -x output_R1.fastq -y output_R2.fastq -f 10 -z
 
-...
 
-C Script for Subsampling ONT Single-End FASTQ Reads
+```
 
-Here's a C script specifically designed for subsampling Oxford Nanopore Technologies (ONT) single-end FASTQ reads:
+### 2. C Script for Subsampling Single-End FASTQ Reads
+
+Compilation:
+
+You'll need to link with zlib:
+
+```bash
 
 
+gcc -o subsample_single_end_fastq.c -o subsample_single_end_fastq -lz
 
+```
 
+Usage:
 
-This version will:
+```bash
+
+# Subsample 20% with gzip-compressed output and verbose logs
+
+./subsample_single_end_fastq -i input.fastq -o subsampled.fastq.gz -f 20 -z -v
+
+```
+### 3. These versions will:
 
 Properly handle your gzipped input files
 
