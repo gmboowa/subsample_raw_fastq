@@ -61,12 +61,12 @@ Usage:
 ./subsample_single_end_fastq -i input.fastq -o subsampled.fastq.gz -f 20 -z -v
 
 ```
-### 3. These versions will:
+### 3. This version:
 
-Properly handle your gzipped input files
+Handles your gzipped input files
 
-Give you a clear error if the files are wrongly paired
+Gives you a clear error if the files are wrongly paired
 
-Allow compressed output with -z
+Allows compressed output with -z
 
-Provide more detailed information about any issues
+Provides more detailed information about any issues
